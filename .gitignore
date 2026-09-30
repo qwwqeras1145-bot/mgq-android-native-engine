@@ -1,0 +1,101 @@
+# ─────────────────────────────────────────────────────────────
+#  本仓库只包含代码、文档与工具。
+#
+#  下面的规则是刻意的「安全护栏」：防止误把游戏本体或其素材提交进来。
+#  请不要为了图方便删除它们。
+# ─────────────────────────────────────────────────────────────
+
+# ── 游戏引擎归档包（游戏本体的主要载体）──
+*.nsa
+*.xp3
+*.rpa
+*.arc
+*.pak
+nscript.dat
+
+# ── 编译后的脚本 / 反编译产物 ──
+*.rpyc
+*.rgssad
+*.rgss3a
+result.txt
+decoded*.txt
+
+# ── 游戏可执行文件与私有扩展 ──
+# 注意：这条会挡住随游戏分发的 x86 DLL，正是我们想要的效果。
+*.exe
+*.dll
+*.so
+*.dylib
+
+# ── 素材（图像 / 音频 / 视频 / 字体）──
+# Android 的矢量图是 .xml，不受这些规则影响。
+*.bmp
+*.jpg
+*.jpeg
+*.webp
+*.gif
+*.ogg
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.mpg
+*.mp4
+*.avi
+*.mkv
+*.ttf
+*.otf
+*.ttc
+*.fon
+
+# ── 凭据：绝不入库 ──
+.env
+.env.*
+*.token
+*.pem
+*.key
+credentials*
+secrets*
+gh_*_token*
+
+# ── Android / Gradle 构建产物 ──
+# 用 build/ 匹配任意层级的构建目录（android/build/、core/build/）。
+# 源码目录名都带 src/，不会被这条误伤。
+build/
+.gradle/
+local.properties
+captures/
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output-metadata.json
+
+# ── 本地草稿 / 勘察输出 ──
+/scratch/
+/out/
+/reports/local/
+*.local.json
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# ── 编辑器 / 系统 ──
+.vscode/
+.idea/
+*.iml
+*.swp
+*~
+.DS_Store
+Thumbs.db
+desktop.ini

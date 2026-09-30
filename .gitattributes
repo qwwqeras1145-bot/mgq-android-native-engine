@@ -1,0 +1,11 @@
+# 统一换行符，避免 Windows/Linux 协作时的无意义 diff
+* text=auto eol=lf
+
+# 二进制类文件不做换行转换
+*.png  binary
+*.jpg  binary
+*.bmp  binary
+*.ogg  binary
+*.mp3  binary
+*.ttf  binary
+*.zip  binary

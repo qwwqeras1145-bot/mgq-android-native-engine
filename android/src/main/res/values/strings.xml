@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MGQ 原生引擎</string>
+    <string name="intro">本应用不含任何游戏本体。请选择你自己拥有的游戏根目录（需包含 nscript.dat 与 arc*.nsa）。\n\n这是一个用 Kotlin 重写的 NScripter 解释器，不是模拟器：它直接解析 nscript.dat 并执行脚本指令，不依赖 Wine 或任何 x86 兼容层。</string>
+    <string name="choose_folder">选择游戏目录</string>
+    <string name="status_ready">等待选择目录。游戏数据只会被复制到本应用私有目录，不会上传。</string>
+    <string name="status_no_folder">未选择目录</string>
+    <string name="status_selected">已选择：%1$s\n脚本：%2$s</string>
+    <string name="status_missing_script">未找到 nscript.dat</string>
+</resources>
